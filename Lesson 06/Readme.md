@@ -27,7 +27,7 @@
 Перед тем, как мы добавим DTO (**D**ata **T**ransfer **O**bjets), нужно несколько изменить layout:
 1. Нужно переименовать папку `Controllers` в `Meetup`
 2. Нужно переименовать файл `MeetupController` в просто `Controller` (только файл, название класса оставить как было)
-3. Создать файл `Model.cs` в папке `Meetup` и перенести туда класс `Meetup`, заменив модификатор доступа на `internal`
+3. Создать файл `Model.cs` в папке `Meetup` и перенести туда класс `Meetup`, заменив модификатор доступа на `internal` и изменив тип поля `Id` с `Guid?` на `Guid`
 4. Создать файл `DataTransferObjects.cs` в папке `Meetup`.
 
 Теперь можно в файле `DataTransferObjects.cs` создать 3 DTO:
