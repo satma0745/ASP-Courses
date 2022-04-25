@@ -184,6 +184,8 @@ public class UserController : ControllerBase
         }
 
         var newUser = _mapper.Map<UserEntity>(registerDto);
+        newUser.Password = BCrypt.HashPassword(registerDto.Password);
+        
         _context.Users.Add(newUser);
         await _context.SaveChangesAsync();
 
