@@ -56,7 +56,7 @@ public string Topic { get; set; }
 ```
 
 > **Note**: Для ограничения использования символов, я использовал regex `^[\w\s\.-–—]*$`. Вы можете ознакомиться с regex
-в [это статье](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference).
+в [этой статье](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ### Валидация поля Place
 
