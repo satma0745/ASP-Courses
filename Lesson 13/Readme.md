@@ -319,7 +319,7 @@ public class UserController : ControllerBase
 > **Note**: Методы `GetCurrentUserInfo` и `RegisterNewUser` не были затронуты в ходе рефакторинга, так что я не включил
 их в листинг кода выше. Тоже самое касается документационных анотаций и комментариев.
 
-Также нам нужно добавить сервис в DI контейнер (что бы он автоматически передавался в конструктор `UserController`). Для
+Также нам нужно добавить сервис в DI контейнер (чтобы он автоматически передавался в конструктор `UserController`). Для
 этого в модуле `Program` добавим:
 ```csharp
 builder.Services.AddScoped<JwtTokenHelper>();

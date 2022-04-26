@@ -17,7 +17,7 @@
 
 Функциональную часть вынесем в папку `Features`. Также у каждой фичи заменим файлы `DataTransferObjects` и `Model`
 папками с несколькими файлами, содержащими отдельные классы. В случае `Model`, папку переименуем в `Entities`; по
-желанию можно настроить [File Nesting](https://www.jetbrains.com/help/rider/File_Nesting_Dialog.html), что бы
+желанию можно настроить [File Nesting](https://www.jetbrains.com/help/rider/File_Nesting_Dialog.html), чтобы
 `...EntityTypeConfiguration` был вложен в `...Entity`. Также можно обратить внимание на то, что `JwtTokenHelper`
 используется только `User` feature, а, значит, его можно перенести в папку `Features/User/Helpers` (`TokenPair` также
 вынести в отдельный файл).
@@ -102,7 +102,7 @@ public DbSet<UserEntity> Users => Set<UserEntity>();
 public DbSet<RefreshTokenEntity> RefreshTokens => Set<RefreshTokenEntity>();
 ```
 
-Для того, что бы избавиться от сообщений в DTO или entity, можно просто указать стандартные значения для полей (они всё
+Для того, чтобы избавиться от сообщений в DTO или entity, можно просто указать стандартные значения для полей (они всё
 равно будут перезаписаны пользователем и провалидированы):
 ```csharp
 public class CreateMeetupDto

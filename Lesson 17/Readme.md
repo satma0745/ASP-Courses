@@ -134,7 +134,7 @@ internal static class Program
 ## Extension методы
 
 В c# есть такая фича, как [extension-методы](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration).
-Мы используем их, что бы упростить код в `Startup`.
+Мы используем их, чтобы упростить код в `Startup`.
 
 ### Метод `Configure`
 
@@ -327,5 +327,5 @@ internal static class ConfigurationExtensions
 }
 ```
 
-> **Note**: Обновите код `DependencyInjectionExtensions` и `JwtTokenHelper` так, что бы они использовали эти
+> **Note**: Обновите код `DependencyInjectionExtensions` и `JwtTokenHelper` так, чтобы они использовали эти
 extension-методы.
