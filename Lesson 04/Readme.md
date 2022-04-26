@@ -117,7 +117,7 @@ app.MapDelete("/meetups/{id:guid}", ([FromRoute] Guid id) =>
     return Results.Ok(meetupToDelete);
 });
 ```
-Запиьс `{id:guid}` в url нужна для того, что бы endpoint принимал в качетсве id только значения в формате `Guid`, т.е.
+Запись `{id:guid}` в url нужна для того, что бы endpoint принимал в качетсве id только значения в формате `Guid`, т.е.
 `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`. Атрибут `[FromRoute]` обозначает, что `Guid id` получается из url. Вызов
 `SingleOrDefault` проходит по всем митапам и находит тот, который удовлетворяет условию `meetup.Id == id`, а если такого
 нет - возвращает `null`.

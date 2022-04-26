@@ -212,7 +212,7 @@ public async Task<IActionResult> GetCurrentUserInfo()
 ### Настройка JWT Auth в ASP
 
 Что бы атрибут `[Authorize]` начал работать, нам нужно сначала настроить ASP на работу с JWT. Для этого нам нужно
-добавить сервися авторизации в модуле `Program`:
+добавить сервис авторизации в модуле `Program`:
 ```csharp
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
